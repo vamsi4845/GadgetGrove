@@ -96,7 +96,7 @@ const CheckoutForm = () => {
       ) : (
         <article>
           <h4>Hello, {myUser && myUser.name.split("@")[0]}</h4>
-          <p>Your total is {formatPrice(total_amount)}</p>
+          <p>Your total is {total_amount}</p>
           <p>Test Card Number: 6868 6868 6868 6868</p>
         </article>
       )}
