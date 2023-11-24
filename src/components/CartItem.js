@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { formatPrice } from '../utils/helpers'
 import AmountButtons from './AmountButtons'
 import { FaTrash } from 'react-icons/fa'
 import { useCartContext } from '../context/cart_context'
@@ -22,12 +21,12 @@ const CartItem = ({ id, image, name, color, price, amount }) => {
         <p className="color">
           color:<span style={{ background: color }}></span>
         </p>
-        <h5 className='price-small'>{formatPrice(price)}</h5>
+        <h5 className='price-small'>₹{price}</h5>
       </div>
     </div>
-    <h5 className='price'>{price}</h5>
+    <h5 className='price'>₹{price}</h5>
     <AmountButtons amount={amount} increase={increase} decrease={decrease} />
-    <h5 className='subtotal'>{formatPrice(price * amount)}</h5>
+    <h5 className='subtotal'>₹{price * amount}</h5>
     <button type='button' className='remove-btn' onClick={() => removeItem(id)}>
       <FaTrash />
     </button>
