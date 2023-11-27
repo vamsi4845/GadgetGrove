@@ -6,11 +6,11 @@ const Services = () => {
   return <Wrapper>
     <div className="section-center">
       <article className='header'>
-        <h3>Custom Furniture<br />
-          built only for you
+        <h3>Explore our<br />
+          Tech Marketplace
         </h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus aliquid ad nemo culpa doloribus. Eveniet et iste ipsam autem quo ipsa repudiandae assumenda voluptatum! Dolorem odit, quod provident magni officia ad obcaecati nam minima, exercitationem ipsum aliquid fuga, numquam consectetur.
+          Embark on a tech enthusiast's dream at our Explore Tech Marketplace. Immerse yourself in a curated selection of cutting-edge gadgets, from sleek smart devices to innovative tech accessories and Navigate effortlessly through our user-friendly platform, where an array of exclusive deals and discounts await, making your tech exploration an exciting and rewarding journey
         </p>
       </article>
       <div className="services-center">

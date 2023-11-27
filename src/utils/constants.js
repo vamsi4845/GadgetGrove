@@ -22,23 +22,23 @@ export const services = [
   {
     id: 1,
     icon: <GiCompass />,
-    title: 'mission',
+    title: 'Diverse Gadget Selection',
     text:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi',
+      "Dive into a world of possibilities with our vast selection of gadgets. From the latest smart devices to innovative tech accessories, discover a diverse range of products",
   },
   {
     id: 2,
     icon: <GiDiamondHard />,
-    title: 'vision',
+    title: 'Effortless Shopping Experience',
     text:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi',
+      "Enjoy a hassle-free and enjoyable shopping experience with us. Our user-friendly interface and seamless checkout process make it easy for you to find, select, and purchase your favorite gadgets",
   },
   {
     id: 3,
     icon: <GiStabbedNote />,
-    title: 'history',
+    title: 'Exclusive Deals and Discounts',
     text:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi',
+      "Unlock unbeatable value with our exclusive deals and discounts. We believe in making cutting-edge technology accessible to everyone,discover special promotions and limited-time offers",
   },
 ]
 

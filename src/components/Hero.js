@@ -7,11 +7,11 @@ const Hero = () => {
   return <Wrapper className='section-center'>
     <article className='content'>
       <h1>
-        design your <br />
-        comfort zone
+        Dive into <br />
+        Tech Wonderland
       </h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa iusto exercitationem, nemo amet mollitia dolorum autem possimus minima dicta ratione quisquam? Nulla nam aliquid tenetur molestias facilis voluptates nobis veritatis accusantium minus, sed nesciunt amet. Eius, ex. Excepturi, veritatis possimus!
+        Dive into Tech Wonderland at Gadget Grove, where every gadget becomes a portal to a realm of innovation and discovery. Imagine a place where cutting-edge technology seamlessly intertwines with the boundless curiosity of the human mind, creating a wonderland of possibilities. Our thoughtfully curated collection of gadgets transcends mere functionality; it's an immersive journey into the future.
       </p>
       <Link to='/products' className='btn hero-btn'>Shop Now</Link>
     </article>

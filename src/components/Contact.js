@@ -6,7 +6,7 @@ const Contact = () => {
     <div className="section-cente">
       <h3>Join our NewsLetter and get 20% off</h3>
       <div className="content">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel neque sit veritatis. Quod explicabo omnis laudantium voluptas nulla voluptatum aut!</p>
+        <p>Subscribe to our newsletter and stay ahead in the world of tech! Get the latest updates on gadget launches!</p>
         <form
           className='contact-form'
           action='https://formspree.io/f/mzblqpag'
@@ -23,12 +23,14 @@ const Contact = () => {
 }
 const Wrapper = styled.section`
   padding: 5rem 0;
+  margin:0.5rem;
   h3 {
     text-transform: none;
+    margin:none;
   }
   p {
     line-height: 2;
-    max-width: 45em;
+    max-width: 43em;
     color: var(--clr-grey-5);
   }
   .contact-form {
