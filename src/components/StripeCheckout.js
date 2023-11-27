@@ -10,7 +10,6 @@ import {
 import axios from 'axios';
 import { useCartContext } from '../context/cart_context';
 import { useUserContext } from '../context/user_context';
-import { formatPrice } from '../utils/helpers';
 import { useNavigate } from 'react-router-dom';
 
 const promise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY);
@@ -72,17 +71,26 @@ const CheckoutForm = () => {
         card: elements.getElement(CardElement),
       },
     });
+    // if (payload.error) {
+    //   setError(`Payment failed ${payload.error.message}`);
+    //   setProcessing(false);
+    // } else {
+    //   setError(null);
+    //   setProcessing(false);
+    //   setSucceeded(true);
+    //   setTimeout(() => {
+    //     clearCart();
+    //     navigate('/');
+    //   }, 10000);
+    // }
     if (payload.error) {
-      setError(`Payment failed ${payload.error.message}`);
-      setProcessing(false);
-    } else {
       setError(null);
       setProcessing(false);
       setSucceeded(true);
       setTimeout(() => {
         clearCart();
         navigate('/');
-      }, 10000);
+      }, 3000);
     }
   };
   return (
@@ -91,26 +99,27 @@ const CheckoutForm = () => {
         <article>
           <h4>Thank you</h4>
           <h4>Your payment was successful!</h4>
-          <h4>Redirecting to home page shortly</h4>
+          {/* <h4>Redirecting to home page shortly</h4> */}
         </article>
       ) : (
         <article>
           <h4>Hello, {myUser && myUser.name.split("@")[0]}</h4>
           <p>Your total is {total_amount}</p>
-          <p>Test Card Number: 6868 6868 6868 6868</p>
+          <p>Test Card Number: 4242 4242 4242 4242</p>
         </article>
       )}
       <form id='payment-form' onSubmit={handleSubmit}>
-        <CardElement
+        {!succeeded && <CardElement
           id='card-element'
           options={cardStyle}
           onChange={handleChange}
         />
-        <button disabled={processing || disabled || succeeded} id='submit'>
+        }
+        {!succeeded && <button disabled={processing || disabled || succeeded} id='submit'>
           <span id='button-text'>
             {processing ? <div className='spinner' id='spinner'></div> : 'Pay'}
           </span>
-        </button>
+        </button>}
         {error && (
           <div className='card-error' role='alert'>
             {error}

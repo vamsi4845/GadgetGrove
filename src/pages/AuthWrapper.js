@@ -3,7 +3,7 @@ import { useAuth0 } from '@auth0/auth0-react'
 import styled from 'styled-components'
 
 const AuthWrapper = ({ children }) => {
-  const { user, isLoading, error } = useAuth0()
+  const { isLoading, error } = useAuth0()
   if (isLoading) {
     return <Wrapper>
       <h1>Loading...</h1>
