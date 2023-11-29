@@ -53,7 +53,6 @@ const Filters = () => {
           <h5>Colors</h5>
           <div className="colors">
             {colors.map((c, index) => {
-              console.log(c);
               if (c === 'all') {
                 return <button key={index} name='color' onClick={updateFilters}
                   data-color='all' className={`${color === 'all' ? 'all-btn active' : 'all-btn'}`}

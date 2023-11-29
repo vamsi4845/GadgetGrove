@@ -54,7 +54,6 @@ export const FilterProvider = ({ children }) => {
     dispatch({ type: UPDATE_SORT, payload: value })
   }
   const updateFilters = (e) => {
-    console.log("clicked");
     let name = e.target.name
     let value = e.target.value
     if (name === 'category') {
