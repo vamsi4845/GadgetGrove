@@ -17,7 +17,6 @@ exports.handler = async (event, context, cb) => {
                 }
             }
             product = { id: product.id, ...product.fields }
-            console.log(product)
             return {
                 statusCode: 200,
                 body: JSON.stringify(product),
